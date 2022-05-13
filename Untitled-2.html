@@ -8,10 +8,14 @@
 </head>
 <body>
     <script>
-        let nom = "";
-        var edad = 0;
+       let cumple ;
+        let opc ;
+         let nom ;
+         var edad =0;
+         
         nom = prompt ("Escribe tu nombre ");
         console.log ("Tu nombre es :"+nom);
+        
         console.log("ahora calcularemos tu edad !");
         edad = prompt ("Escribe tu edad :");
         if (edad <= 0  ) 
@@ -24,7 +28,36 @@
         {
            alert ("aun no soy tan viejo");
         }
+         
+        console.log("A continuacion ,tendras 3 oportunidades de adivinar mi cumpleaños !");
+        for (let i =0; i <= 3; i++)
+        {
+            cumple = prompt ("Cuando es tu cumpleaños");
+            if (cumple = 01/08/03) 
+            {
+              alert("Le atinaste !");  
+            } else 
+            {
+             alert ("Sigue Intentando :c");    
+            }
         
+        }
+
+        
+        opc = prompt ("Que deceas conocer ? \n 1.- info personal \n 2.-Trayectoria");
+        switch (opc )
+        {
+            case 1 :
+                console.log("Hola mi nombre es: " +nom+"\n y soy un estudiante de ing en software ") ;
+            break;
+
+            case 2:
+            console.log("Hola llevo aproximadamente 15 años de trayectoria estudiantil ,desde kinder hasta ahora (universidad)") ;
+            break;
+            
+            default:
+            break;    
+        }
 
 
         </script>
